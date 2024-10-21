@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+    
+      <style>
+        body {
+          font-family: Arial, sans-serif;
+          padding: 20px;
+        }
+    
+        h1 {
+          color: #333;
+          text-align: center;
+        }
+    
+        p {
+          margin-bottom: 10px;
+        }
+    
+        #validationButton {
+          background-color: #4CAF50;
+          color: white;
+          padding: 10px 20px;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+          font-size: 16px;
+        }
+    
+        #validationButton:hover {
+          background-color: #45a049;
+        }
+
+        .conteneur{
+            width: 300px;
+            height: 300px;
+            text-align: center;
+          }
+      </style>
+    
+    <body>
+      <h1>Instructions de sécurité</h1>
+      <p>Pour votre sécurité, veuillez suivre les consignes suivantes :</p>
+      <ol>
+        <li>Portez toujours un casque de protection lorsque vous travaillez.</li>
+        <li>Mettez des gants pour éviter tout risque de blessure.</li>
+      </ol>
+      <p>En cliquant sur le bouton ci-dessous, vous confirmez avoir lu et compris les consignes de sécurité.</p>
+      <a href="../(23) St Benoit La Guignerette-R23/Mail-Accueil/saisie-mail.html"><button id="validationButton" onclick="validate()">J'ai bien lu</button></a><br><br><br><br><br>
+      <div class=conteneur>
+        <img  src="https://www.poledeseaux.fr/sites/poledeseaux.fr/www.poledeseaux.fr/themes/poledeseaux/logo.svg"/>
+      </div>
+      <script>
+        function validate() {
+          alert("Merci d'avoir confirmé que vous avez bien lu les consignes de sécurité !");
+        }
+      </script>
+    </body>
+    </html>
+     
+</body>
+</html>
