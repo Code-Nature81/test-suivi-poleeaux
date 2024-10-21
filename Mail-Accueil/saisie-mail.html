@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saisie de mail</title>
+</head>
+
+<style>
+
+body {
+  font-family: Arial, sans-serif;
+  background-image: url(1700576998711.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+      
+      
+      
+    }
+
+   
+    html,body {
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+    overflow-x: hidden;
+    }
+    #header{
+      border-bottom: black;
+        background-color: aquamarine;
+        margin-top: -22px;
+        text-align: center;
+       
+        
+    }
+  
+    #piedpage {
+	
+        bottom: 0; left: 0;
+        width: 100%;
+        background-color: #ffffff;;
+        height: 88px;
+        border-top: #000000 solid 1px;
+        border-bottom: #ffffff;
+        position: fixed;
+    }
+
+.center{
+  display: block;
+  text-align: center;
+  margin-top: 65%;
+ 
+  
+
+}
+
+.btnmail{
+  font-size: 17px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: 100;
+}
+
+.btncollec{
+    border: 0;
+    line-height: 4;
+    padding:65px 10px;
+    font-size: 1rem;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+    margin-left: 2px;
+    margin-top: 1px;
+    color: rgb(0, 0, 0);
+    /*text-shadow: 1px 1px 1px #000;*/
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    /*background-image: linear-gradient(to top left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0));*/
+    /*box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);*/
+    width: 50%;
+    background-image: url(https://www.poledeseaux.fr/sites/poledeseaux.fr/www.poledeseaux.fr/themes/poledeseaux/logo.svg);
+    background-repeat: no-repeat;
+    background-position: 70% 16px;
+    background-size: 165px;
+    
+    
+}
+.btnpb{
+    border: 0;
+    line-height: 4;
+    padding:26px 5px;
+    font-size: 1rem;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+    margin-left: 0px;
+    margin-top: 1px;
+    color: rgb(0, 0, 0);
+    /*text-shadow: 1px 1px 1px #000;*/
+    border-radius: 10px;
+    background-color: rgb(177, 62, 62);
+    /*background-image: linear-gradient(to top left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0));*/
+    /*box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);*/
+    width: 40%;
+    background-image: url(https://api.iconify.design/majesticons:mail-line.svg?color=%23000000);
+    background-repeat: no-repeat;
+    background-position: 50% 5px;
+    background-size: 41px;
+    
+    
+    
+}
+
+
+</style>
+<body>
+    <header>
+        <div id="header">
+            <h2>Château d'eau Castelfadeze<br>R-01</h2>
+  
+
+        </div>
+    </header>
+
+  <div class="center">
+    <a href="mailto:maint.prod@poledeseaux.fr"><button class="btnmail" type="button" style="cursor: pointer; width:  150px; background-color: aquamarine;padding: 15px 20px; border-radius: 5px; text-align: center; ">Envoyer mail</button></a>
+  </div>
+
+ 
+  <footer>
+    <div id="piedpage">
+        
+        <button class="btncollec" type="button" style="cursor: pointer;"></button>
+        <a href="../procedure/procedure.html"><button class="btnpb" type="button" style="cursor: pointer;"  id="validationButton" type="button"  onclick="validate()">Validation du mail</button></a>
+       
+       
+    </div>
+</footer>
+        
+      </div>
+
+      
+      <script>
+        function validate() {
+          alert("Merci d'avoir confirmé que vous avez bien envoyé le mail au service technique !");
+        }
+
+      
+      </script>
+
+
+      
+
+
+
+</body>
+</html>

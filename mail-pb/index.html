@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Mail pb</title>
+</head>
+<style>
+    html,body {
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+    overflow-x: hidden;
+    }
+    #header{
+        background-color: aquamarine;
+        height: 82px;
+        margin-top: -25px;
+        text-align: center;
+        
+    }
+
+    h3{
+        margin-left: 10px;
+    }
+    footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 10px 0;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+    
+    /* Container pour les boutons */
+    .footer-buttons {
+        display: flex;
+        justify-content: space-around;
+        gap: 10px;
+        flex-wrap: nowrap;
+    }
+    
+    /* Styles pour les boutons en tant que liens */
+    .footer-button {
+        background-color: #55555500;
+        color: white;
+        border: none;
+        padding: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        transition: background-color 0.3s ease;
+        flex-grow: 1;
+        flex-basis: 0;
+        max-width: 25%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-decoration: none; /* Supprime la soulignement du lien */
+    }
+    
+    /* Styles pour les icônes */
+    .footer-button i {
+        font-size: 24px; /* Taille de l'icône */
+        margin-bottom: 5px;
+    }
+    
+    /* Styles pour le texte */
+    .footer-button span {
+        font-size: 16px; /* Taille du texte */
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-style: italic;
+    }
+    
+    /* Effet au survol des boutons */
+    .footer-button:hover {
+        background-color: #777;
+    }
+    
+    /* Media queries pour ajuster le padding sur les très petits écrans */
+    @media (max-width: 400px) {
+        .footer-button {
+            padding: 8px 5px;
+            font-size: 14px;
+        }
+    
+        .footer-button i {
+            font-size: 20px;
+        }
+    
+        .footer-button span {
+            font-size: 12px;
+        }
+    }
+
+    @media (max-width: 300px) { 
+        h2{
+           font-size: 17px;
+        }
+   }
+
+
+
+</style>
+<body>
+    <header>
+        <div id="header">
+            <h2 style="margin-bottom: 5px; padding-top: 8px; font-size: 30px;"><u> Saisie de problème</u></h2><h2 style="margin-top: 0px;"> Application pour Techniciens</h2>
+  
+
+        </div>
+    </header>
+
+    <form action="mailto:maint.prod@poledeseaux.fr" method="GET">
+        <h3>Nom / Numéro Réservoir:</h3>
+        <input name="subject" type="text" style="margin-left: 10px; width: 38%;" /></br><br>
+        <h3>Problème:</h3>
+        <input name="subject" type="text"  style="margin-left: 10px;width: 38%;"/><br /><br>
+       
+        <h3>Réparation:</h3>
+        <textarea name="body" style="width: 85%; height: 70px; margin-left: 10px;"></textarea><br />
+        <br/>
+        <input type="submit" value="Envoyer" style="margin-left: 10px; background-color: rgb(52, 196, 52); height: 30px;" />
+      </form><br><br><br><br><br><br><br><br><br><br><br><br>
+    
+      <script src="script.js"></script>
+
+
+
+      <footer>
+        <div class="footer-buttons">
+            <a href="../procedure/procedure.html" class="footer-button">
+                <i class="fa fa-file-text" aria-hidden="true"></i>
+                <span>Procédures</span>
+            </a>
+            <a href="../Plan/plan.html" class="footer-button">
+                <i class="fa fa-map" aria-hidden="true"></i>
+                <span>Plan</span>
+            </a>
+            <a href="../Schéma-élec/pdf-test-telechargement.html" class="footer-button">
+                <i class="fa fa-object-group"></i>
+                <span>Schéma-élec</span>
+            </a>
+            <a href="../mail-pb/index.html" class="footer-button">
+                <i class="fas fa-envelope" style="color: aquamarine;"></i>
+                <span style="color: aquamarine;">Saisie Pb</span>
+            </a>
+
+        </a>
+        <a href="../suivi/index.html" class="footer-button">
+            <i class="fa-solid fa-pen-to-square"></i>
+            <span>Suivi</span>
+        </a>
+        </div>
+    </footer>
+</body>
+</html>
